@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+  }
+  
+  .container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+  }
+  
+  /* Top-left artist name */
+  h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  
+  /* Subtitle under name (optional) */
+  h2 {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 2.5rem;
+    margin-left: 1px;
+  }
+  
+  /* Right-aligned image */
+  .main-photo {
+    max-width: 500px; /* 👈 Make image smaller */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    align-self: flex-end;
+    margin-top: -50px; /* Add space from top name */
+    margin-right: 50px;
+  }
+  
+  .image-caption {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+    padding: 8px;
+    font-size: 0.9rem;
+    text-align: center;
+    font-style: italic;
+    margin-left: 440px;
+}  
+  
+  /* Bottom-left contact info */
+  .contact {
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+    font-size: 0.95rem;
+    color: #333;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 8px 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  

@@ -1,0 +1,40 @@
+.navbar {
+    margin-top: 15px;
+    margin-left: 5px;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  .navbar li a {
+    text-decoration: none;
+    color: #222;
+    position: relative;
+    padding-bottom: 5px;
+  }
+  
+  .navbar li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background: #222;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+  }
+  
+  .navbar li a:hover::after,
+  .navbar li a:focus::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  
