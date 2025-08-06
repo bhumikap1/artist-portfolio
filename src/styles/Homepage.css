@@ -33,12 +33,12 @@ body {
   
   /* Right-aligned image */
   .main-photo {
-    max-width: 500px; /* 👈 Make image smaller */
+    max-width: 400px; /* 👈 Make image smaller */
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     align-self: flex-end;
-    margin-top: -50px; /* Add space from top name */
+    margin-top: -80px; /* Add space from top name */
     margin-right: 50px;
   }
   
@@ -51,7 +51,7 @@ body {
     font-size: 0.9rem;
     text-align: center;
     font-style: italic;
-    margin-left: 440px;
+    margin-left: 480px;
 }  
   
   /* Bottom-left contact info */

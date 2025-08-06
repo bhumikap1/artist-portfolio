@@ -7,7 +7,7 @@ function Homepage() {
   return (
     <div className="container">
       <h1>Shubhankar Kumar Biswas</h1>
-      <h2>(Ceramics and Glass)</h2>
+      <h2>(Ceramics and Glass) Art Works</h2>
       <Navbar />
       <img src={artwork} alt="Shubhankar's Artwork" className="main-photo" />
         <div className="image-caption">
