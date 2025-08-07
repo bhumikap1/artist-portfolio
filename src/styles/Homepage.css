@@ -1,70 +1,107 @@
 body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #f4f4f4;
-    min-height: 100vh;
-  }
-  
-  .container {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    position: relative;
-  }
-  
-  /* Top-left artist name */
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #969191;
+  min-height: 100vh;
+}
+
+.container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* Top-left artist name */
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 20px 0 0 20px;
+  position: relative;
+}
+
+/* Subtitle under name */
+.subtitle {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #252525;
+  margin: 5px 0 20px 20px;
+  position: relative;
+}
+
+/* Caption below image slider */
+.image-caption {
+  margin-top: 20px;
+  padding: 8px;
+  font-size: 1rem;
+  text-align: center;
+  font-style: italic;
+  width: 100%;
+  position: relative;
+  margin-left: 0;
+}
+
+/* Bottom-left contact info */
+.contact {
+  position: fixed;
+  bottom: 15px;
+  left: 15px;
+  font-size: 0.95rem;
+  color: #333;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 8px 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ===================== Responsive Design ===================== */
+
+/* Medium Devices (Tablets) */
+@media screen and (max-width: 768px) {
   h1 {
-    font-size: 2rem;
-    font-weight: bold;
-    margin: 0;
-    position: absolute;
-    top: 20px;
-    left: 20px;
+    font-size: 1.6rem;
+    padding-left: 15px;
   }
-  
-  /* Subtitle under name (optional) */
-  h2 {
-    font-size: 1rem;
-    color: #555;
-    margin-top: 2.5rem;
-    margin-left: 1px;
-  }
-  
-  /* Right-aligned image */
-  .main-photo {
-    max-width: 400px; /* 👈 Make image smaller */
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    align-self: flex-end;
-    margin-top: -80px; /* Add space from top name */
-    margin-right: 50px;
-  }
-  
-  .image-caption {
-    position: absolute;
-    bottom: -20px;
-    left: 0;
-    width: 100%;
-    padding: 8px;
-    font-size: 0.9rem;
-    text-align: center;
-    font-style: italic;
-    margin-left: 480px;
-}  
-  
-  /* Bottom-left contact info */
-  .contact {
-    position: fixed;
-    bottom: 15px;
-    left: 15px;
+
+  .subtitle {
     font-size: 0.95rem;
-    color: #333;
-    text-align: left;
-    background: rgba(255, 255, 255, 0.85);
-    padding: 8px 12px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 15px;
   }
-  
+
+  .image-caption {
+    font-size: 0.95rem;
+  }
+
+  .contact {
+    font-size: 0.85rem;
+    padding: 6px 10px;
+  }
+}
+
+/* Small Devices (Phones) */
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.4rem;
+    padding-left: 10px;
+  }
+
+  .subtitle {
+    font-size: 0.85rem;
+    margin-left: 10px;
+  }
+
+  .image-caption {
+    font-size: 0.85rem;
+    padding: 6px;
+  }
+
+  .contact {
+    font-size: 0.8rem;
+    padding: 5px 8px;
+    left: 10px;
+    bottom: 10px;
+  }
+}

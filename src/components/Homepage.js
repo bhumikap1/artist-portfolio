@@ -1,18 +1,20 @@
 import React from 'react';
 import '../styles/Homepage.css';
-import artwork from '../assets/artist.jpg';
 import Navbar from './Navbar';
+import ImageSlider from './Imageslide'; // 👈 import the new slider
 
 function Homepage() {
   return (
     <div className="container">
       <h1>Shubhankar Kumar Biswas</h1>
-      <h2>(Ceramics and Glass) Art Works</h2>
+      <h2 className="subtitle">(Ceramics and Glass) Art Works</h2>
       <Navbar />
-      <img src={artwork} alt="Shubhankar's Artwork" className="main-photo" />
-        <div className="image-caption">
-         Shubhankar Kumar Biswas (Ceramics and Glass) Art Gallery
-        </div>
+
+      <ImageSlider /> {/* 👈 slideshow replaces the static image */}
+
+      <div className="image-caption">
+        Shubhankar Kumar Biswas (Ceramics and Glass) Art Works
+      </div>
       <div className="contact">
         📧 artistshubhankar@gmail.com <br />
         📞 +91-9555452173
