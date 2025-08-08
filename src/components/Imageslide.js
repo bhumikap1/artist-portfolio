@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom'; // Import Link
 import '../styles/Imageslide.css';
-import img1 from '../assets/img5.jpg';
-import img2 from '../assets/img14.jpg';
-import img3 from '../assets/img3.png'; // Add more if needed
+
+import img1 from '../assets/img1.jpg';
+import img2 from '../assets/img2.jpg';
+import img3 from '../assets/img3.png';
 
 const images = [img1, img2, img3];
 
@@ -12,19 +14,20 @@ function ImageSlider() {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrent((prev) => (prev + 1) % images.length);
-    }, 3000); // Slide every 3s
+    }, 4000); // Slide every 3s
     return () => clearInterval(timer);
   }, []);
 
   return (
     <div className="slider-box">
       {images.map((image, index) => (
-        <img
-          key={index}
-          src={image}
-          alt={`Slide ${index + 1}`}
-          className={`main-photo ${index === current ? 'active' : ''}`}
-        />
+        <Link to="/artworks" key={index}>
+          <img
+            src={image}
+            alt={`Slide ${index + 1}`}
+            className={`main-photo ${index === current ? 'active' : ''}`}
+          />
+        </Link>
       ))}
     </div>
   );

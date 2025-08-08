@@ -11,8 +11,15 @@
   position: relative;
 }
 
-.main-photo {
+/* Make each image clickable and fix alignment */
+.slider-box a {
   position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.main-photo {
   width: 100%;
   height: 100%;
   object-fit: contain;
