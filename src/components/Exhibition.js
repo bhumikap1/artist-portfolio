@@ -3,7 +3,6 @@ import "../styles/Exhibition.css";
 import Navbar from "./Navbar"; 
 
 // ✅ Import multiple images for exhibitions
-import ex1a from "../assets/exi1.jpg";
 import ex1b from "../assets/exi2.jpg";
 import ex1c from "../assets/exi3.jpg";
 import ex1d from "../assets/exi4.jpg";
@@ -15,12 +14,12 @@ import ex1h from "../assets/exi8.jpg";
 const exhibitions = [
   {
     title: "Nandan Gallery",
-    description: "2025 – Group Exhibition – Nandan Gallery – Santiniketan",
-    images: [ex1a, ex1b, ex1c, ex1d, ex1e],
+    description: "Group Exhibition – Nandan Gallery – Santiniketan – 2025",
+    images: [ex1b, ex1c, ex1d, ex1e],
   },
   {
     title: "Hues Of Bengal",
-    description: "A celebration of Bengal’s vibrant art and heritage.",
+    description: "Exhibition at Kolkata – Hues Of Bengal – 2025",
     images: [ex1f, ex1g, ex1h],
   },
 ];
