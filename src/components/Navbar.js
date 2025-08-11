@@ -11,7 +11,6 @@ function Navbar() {
         <li><Link to="/resume">Resume</Link></li>
         <li><Link to="/artworks">Artworks</Link></li>
         <li><Link to="/exhibitions">Exhibitions</Link></li>
-        <li><Link to="/awards">Awards</Link></li>
       </ul>
     </nav>
   );

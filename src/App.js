@@ -5,6 +5,7 @@ import About from './components/About';
 import Resume from './components/Resume';
 import ArtGallery from './components/ArtGallery';
 import ImageSlider from './components/Imageslide';
+import Exhibition from './components/Exhibition';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/resume" element={<Resume />} />
         <Route path="/artworks" element={<ArtGallery />} />
         <Route path="/" element={<ImageSlider />} />
+        <Route path="/exhibitions" element={<Exhibition />} />
       </Routes>
     </Router>
   );
