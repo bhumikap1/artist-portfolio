@@ -13,6 +13,7 @@ import ceramic6 from "../assets/img10.png";
 import ceramic7 from "../assets/img13.png";
 import ceramic8 from "../assets/img15.png";
 import ceramic9 from "../assets/img16.png";
+import ceramic10 from "../assets/img17.jpg";
 const glassArtworks = [
   {
     title: "Shattered Reflection Banaras Then and Now",
@@ -75,6 +76,11 @@ const ceramicsArtworks = [
   {
     title: "Architectural Tea Pot",
     image: ceramic9,
+    description: "Architectural Tea Pot, Medium: Ceramics, Size: 13× 9.5 Inches, Year - 2025",
+  },
+  {
+    title: "Architectural Tea Pot",
+    image: ceramic10,
     description: "Architectural Tea Pot, Medium: Ceramics, Size: 13× 9.5 Inches, Year - 2025",
   },
 ];

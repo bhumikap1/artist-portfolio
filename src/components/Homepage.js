@@ -15,9 +15,26 @@ function Homepage() {
       <div className="image-caption">
         Shubhankar Kumar Biswas (Ceramics and Glass) Art Works
       </div>
+
       <div className="contact">
-        📧 artistshubhankar@gmail.com <br />
-        📞 +91-9555452173
+        📧 <a href="mailto:artistshubhankar@gmail.com">artistshubhankar@gmail.com</a> <br />
+        📞 <a href="tel:+919555452173">+91-9555452173</a> <br /><br />
+        🔗 
+        <a 
+          href="https://www.linkedin.com/in/shubhankar-kumar-biswas-28745a24b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          style={{ marginRight: '15px' }}
+        >
+          LinkedIn
+        </a>
+        <a 
+          href="https://www.instagram.com/shubhankar_ceramics?igsh=MWlqZ2lxMHVpemN5Yg==" 
+          target="_blank" 
+          rel="noopener noreferrer"
+        >
+          Instagram
+        </a>
       </div>
     </div>
   );

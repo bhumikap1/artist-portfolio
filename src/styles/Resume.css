@@ -1,7 +1,7 @@
 .resume-container {
   max-width: 1000px;
-  margin: -15px auto 50px auto;  /* center the container with auto */
-  padding: 20px;  /* fixed invalid negative padding */
+  margin: -15px auto 50px auto; /* center the container */
+  padding: 20px;
 }
 
 /* Title styles */
@@ -10,6 +10,28 @@ h2 {
   font-weight: bold;
   font-size: 1.8rem;
   margin-top: 0;
+}
+
+/* Download link container */
+.download-link-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Download link styling */
+.download-link {
+  display: inline-block;
+  padding: 10px 16px;
+  background: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.download-link:hover {
+  background: #0056b3;
 }
 
 /* ========== Responsive Design ========== */
@@ -24,6 +46,10 @@ h2 {
   h2 {
     font-size: 1.5rem;
   }
+
+  .download-link {
+    padding: 8px 14px;
+  }
 }
 
 /* Mobile Phones (≤480px) */
@@ -35,5 +61,12 @@ h2 {
 
   h2 {
     font-size: 1.3rem;
+  }
+
+  .download-link {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
   }
 }
